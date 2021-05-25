@@ -8,6 +8,16 @@ create table user(id int(50) not null auto_increment primary key,FIRST_NAME varc
 
 create table tweets(USER_ID varchar(255), TWEET varchar(255), INSERT_DTS varchar(255));
 
+
+pom.xml
+remove h2 dependency
+add mysql below
+<dependency>
+<groupId>mysql</groupId>
+<artifactId>mysql-connector-java</artifactId>
+</dependency>
+
+
 app.properties
 
 spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
@@ -21,8 +31,8 @@ spring.datasource.password=root
 
 pom.xml
 remove h2 dependency
+add mysql below
 <dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		</dependency>
-add mysql below
