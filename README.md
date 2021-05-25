@@ -21,8 +21,8 @@ spring.datasource.password=root
 
 pom.xml
 remove h2 dependency
-add mysql below
 <dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
 		</dependency>
+add mysql below
