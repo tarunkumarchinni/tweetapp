@@ -17,3 +17,12 @@ spring.jpa.hibernate.ddl-auto=none
 spring.datasource.url=jdbc:mysql://localhost:3306/tweetappdb
 spring.datasource.username=root
 spring.datasource.password=root
+
+
+pom.xml
+remove h2 dependency
+add mysql below
+<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		</dependency>
